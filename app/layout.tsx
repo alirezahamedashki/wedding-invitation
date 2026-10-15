@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alirezahamedashki.github.io/wedding-invitation"),
   title: "علیرضا و آتوسا — جشن عقد",
   description: "دعوتنامه دیجیتال جشن عقد علیرضا و آتوسا — سه‌شنبه ۲۸ مهر ۱۴۰۵، عمارت عقد شب‌های رویایی کرج.",
   icons: {
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
     description: "با افتخار و شادی شما را به جشن عقدمان دعوت می‌کنیم — ۲۸ مهر ۱۴۰۵.",
     type: "website",
     locale: "fa_IR",
+    images: [
+      {
+        url: "/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "پاکت دعوت جشن عقد علیرضا و آتوسا",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "علیرضا و آتوسا — جشن عقد",
+    description: "با افتخار و شادی شما را به جشن عقدمان دعوت می‌کنیم — ۲۸ مهر ۱۴۰۵.",
+    images: ["/og-cover.jpg"],
   },
   robots: { index: false, follow: false },
 };
