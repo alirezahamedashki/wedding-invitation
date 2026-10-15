@@ -18,7 +18,7 @@ type AudioEngine = {
 };
 
 // Real-song segment: seconds 6 → 60, looped seamlessly.
-const SONG_URL = "/music/khanoomam.mp3";
+const SONG_URL = "/wedding-invitation/music/khanoomam.mp3";
 const SONG_START = 6;
 const SONG_END = 60;
 
