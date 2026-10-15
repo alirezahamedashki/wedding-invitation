@@ -17,10 +17,11 @@ type AudioEngine = {
   fallbackTimer?: ReturnType<typeof setInterval>;
 };
 
-// Real-song segment: seconds 6 → 60, looped seamlessly.
+// Trimmed segment: old seconds 6 → 60, looped seamlessly.
+// The file itself starts at the old 6s mark, so playback starts at 0.
 const SONG_URL = "/wedding-invitation/music/khanoomam.mp3";
-const SONG_START = 6;
-const SONG_END = 60;
+const SONG_START = 0;
+const SONG_END = 54;
 
 const MUSIC_CHORDS = [
   [261.63, 329.63, 392, 523.25],
