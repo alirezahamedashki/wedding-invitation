@@ -347,6 +347,7 @@ export default function WeddingInvitation() {
   const [guestName, setGuestName] = useState("مهمان عزیز");
   const [rsvp, setRsvp] = useState<"yes" | "no" | null>(null);
   const [envelopeReady, setEnvelopeReady] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const audioRef = useRef<AudioEngine | null>(null);
   const invitationRef = useRef<HTMLElement | null>(null);
   const openTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -472,6 +473,7 @@ export default function WeddingInvitation() {
     if (invitationRef.current) invitationRef.current.scrollTop = 0;
     setMuted(false);
     setRsvp(null);
+    setScrolled(false);
     setPhase("sealed");
   };
 
@@ -506,13 +508,23 @@ export default function WeddingInvitation() {
         )}
       </section>
 
-      <section ref={invitationRef} className="invitation" aria-hidden={phase !== "open"}>
+      <section
+        ref={invitationRef}
+        className="invitation"
+        aria-hidden={phase !== "open"}
+        onScroll={(e) => setScrolled(e.currentTarget.scrollTop > 40)}
+      >
         <nav className="invitation-controls" aria-label="Invitation controls">
           <button type="button" onClick={toggleSound} aria-label={muted ? "Turn sound on" : "Mute sound"}>
             <SpeakerIcon muted={muted} />
           </button>
           <button type="button" onClick={replay} aria-label="Replay envelope animation"><ReplayIcon /></button>
         </nav>
+
+        <div className={`scroll-cue${scrolled || phase !== "open" ? " is-hidden" : ""}`} aria-hidden="true">
+          <span className="scroll-cue-text">اسکرول کنید</span>
+          <span className="scroll-cue-line"><span /></span>
+        </div>
 
         <section className="couple" dir="rtl" lang="fa" id="top">
           <div className="couple-photo">
