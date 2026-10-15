@@ -11,7 +11,7 @@ page.on("pageerror", (e) => errors.push("pageerror: " + e.message));
 page.on("console", (m) => { if (m.type() === "error") errors.push("console: " + m.text().slice(0, 160)); });
 page.on("response", (r) => { if (r.status() >= 400) errors.push("http " + r.status() + ": " + r.url()); });
 
-await page.goto("http://localhost:3000/", { waitUntil: "networkidle" });
+await page.goto("http://localhost:3000/wedding-invitation/", { waitUntil: "networkidle" });
 await page.waitForTimeout(4000);
 await page.locator(".seal-hit-button").click({ force: true });
 await page.waitForTimeout(5500);

@@ -288,7 +288,7 @@ function WaxSeal({
 
   const radius = 0.43;
   const baseZ = 0.24;
-  const loadedSeal = useTexture("/gold-heart-wax-seal.webp");
+  const loadedSeal = useTexture("/wedding-invitation/gold-heart-wax-seal.webp");
   const sealTexture = useMemo(() => {
     const texture = loadedSeal.clone();
     texture.colorSpace = THREE.SRGBColorSpace;
@@ -559,7 +559,7 @@ function EnvelopeModel({ phase, onOpen, onReady }: Envelope3DProps) {
   const bottomFoldZ = 0.165;
   const flapClosedZ = 0.56;
 
-  const loadedPhoto = useTexture("/calla-hand-envelope.webp");
+  const loadedPhoto = useTexture("/wedding-invitation/calla-hand-envelope.webp");
   const photo = useMemo(() => {
     const texture = loadedPhoto.clone();
     const canvasAspect = width / height;
@@ -900,8 +900,8 @@ export default function Envelope3D({ phase, onOpen, onReady }: Envelope3DProps) 
   useEffect(() => {
     // Kick off texture fetches immediately so Suspense resolves faster.
     try {
-      useTexture.preload("/calla-hand-envelope.webp");
-      useTexture.preload("/gold-heart-wax-seal.webp");
+      useTexture.preload("/wedding-invitation/calla-hand-envelope.webp");
+      useTexture.preload("/wedding-invitation/gold-heart-wax-seal.webp");
     } catch {
       /* preload is best-effort */
     }

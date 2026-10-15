@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Cormorant";
-  src: url("/fonts/CormorantGaramond.ttf") format("truetype");
+  src: url("/wedding-invitation/fonts/CormorantGaramond.ttf") format("truetype");
   font-weight: 300 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Parisienne";
-  src: url("/fonts/Parisienne-Regular.ttf") format("truetype");
+  src: url("/wedding-invitation/fonts/Parisienne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Vazirmatn";
-  src: url("/fonts/Vazirmatn.ttf") format("truetype");
+  src: url("/wedding-invitation/fonts/Vazirmatn.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lalezar";
-  src: url("/fonts/Lalezar.ttf") format("truetype");
+  src: url("/wedding-invitation/fonts/Lalezar.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "IranNastaliq";
-  src: url("/fonts/IranNastaliq.ttf") format("truetype");
+  src: url("/wedding-invitation/fonts/IranNastaliq.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -346,7 +346,7 @@ button, a { font: inherit; -webkit-tap-highlight-color: transparent; }
     radial-gradient(ellipse at center, transparent 52%, rgba(43,34,18,.30)),
     linear-gradient(rgba(43,34,18,.10), transparent 25%, transparent 60%, rgba(43,34,18,.34)),
     linear-gradient(rgba(250,245,236,.30), rgba(250,245,236,.36)),
-    url("/images/bg.jpg") center / cover no-repeat;
+    url("/wedding-invitation/images/bg.jpg") center / cover no-repeat;
 }
 .invitation::-webkit-scrollbar { width: 5px; }
 .invitation::-webkit-scrollbar-track { background: transparent; }

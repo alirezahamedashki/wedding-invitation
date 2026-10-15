@@ -27,10 +27,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="fa" dir="rtl">
       <head>
-        <link rel="preload" href="/fonts/Vazirmatn.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/IranNastaliq.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/calla-hand-envelope.webp" as="image" type="image/webp" />
-        <link rel="preload" href="/images/bouquet-1200.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/wedding-invitation/fonts/Vazirmatn.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/wedding-invitation/fonts/IranNastaliq.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/wedding-invitation/calla-hand-envelope.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/wedding-invitation/images/bouquet-1200.webp" as="image" type="image/webp" />
       </head>
       <body>{children}</body>
     </html>

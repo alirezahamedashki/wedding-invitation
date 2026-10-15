@@ -165,11 +165,11 @@ const MAP_LINKS = {
 };
 
 function NeshanIcon() {
-  return <img src="/icons/neshan-logo.png" alt="" aria-hidden="true" width={62} height={62} loading="lazy" decoding="async" />;
+  return <img src="/wedding-invitation/icons/neshan-logo.png" alt="" aria-hidden="true" width={62} height={62} loading="lazy" decoding="async" />;
 }
 
 function BaladIcon() {
-  return <img src="/icons/balad-logo.png" alt="" aria-hidden="true" width={62} height={62} loading="lazy" decoding="async" />;
+  return <img src="/wedding-invitation/icons/balad-logo.png" alt="" aria-hidden="true" width={62} height={62} loading="lazy" decoding="async" />;
 }
 
 function useCountdown(target: number) {
@@ -516,7 +516,7 @@ export default function WeddingInvitation() {
         <section className="couple" dir="rtl" lang="fa" id="top">
           <div className="couple-photo">
             <img
-              src="/images/bouquet-1200.webp"
+              src="/wedding-invitation/images/bouquet-1200.webp"
               alt="آغاز برای همیشه ما — علیرضا و آتوسا"
               width={1200}
               height={800}
