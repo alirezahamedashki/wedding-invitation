@@ -563,7 +563,7 @@ function EnvelopeModel({ phase, onOpen, onReady }: Envelope3DProps) {
   const photo = useMemo(() => {
     const texture = loadedPhoto.clone();
     const canvasAspect = width / height;
-    const imageAspect = 1080 / 2340;
+    const imageAspect = 682 / 1024;
     texture.colorSpace = THREE.SRGBColorSpace;
     // High anisotropy keeps the photo crisp at grazing angles so paper
     // reads like print, not a blurry projection, on every screen.
