@@ -522,7 +522,7 @@ export default function WeddingInvitation() {
         </nav>
 
         <div className={`scroll-cue${scrolled || phase !== "open" ? " is-hidden" : ""}`} aria-hidden="true">
-          <span className="scroll-cue-text">اسکرول کنید</span>
+          <span className="scroll-cue-text">ادامه</span>
           <span className="scroll-cue-line"><span /></span>
         </div>
 

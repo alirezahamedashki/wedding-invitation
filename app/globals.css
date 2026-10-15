@@ -391,13 +391,10 @@ button, a { font: inherit; -webkit-tap-highlight-color: transparent; }
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 10px 7px 12px;
-  border: 1px solid rgba(173,139,83,.35);
-  border-radius: 999px;
+  padding: 0;
+  border: 0;
   color: var(--gold-deep);
-  background: rgba(250,245,236,.72);
-  box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(8px);
+  background: transparent;
   pointer-events: none;
   transition: opacity .45s ease, transform .45s ease, visibility .45s;
 }
@@ -412,6 +409,7 @@ button, a { font: inherit; -webkit-tap-highlight-color: transparent; }
   font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: .18em;
+  text-shadow: 0 1px 6px rgba(250,245,236,.9), 0 0 2px rgba(250,245,236,.9);
 }
 .scroll-cue-line {
   position: relative;
