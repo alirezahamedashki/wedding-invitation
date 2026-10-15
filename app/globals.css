@@ -712,7 +712,7 @@ button, a { font: inherit; -webkit-tap-highlight-color: transparent; }
   .couple-photo::after { border-radius: 0 0 50% 50% / 0 0 38px 38px; }
   .photo-light { border-radius: 0 0 50% 50% / 0 0 38px 38px; }
   .couple-names { font-size: clamp(30px, 8.5vw, 38px); }
-  .couple-line { font-size: 21px; }
+  .couple-line { font-size: 30px; }
 }
 @media (max-width: 360px) {
   .couple-body { max-width: 100%; }
