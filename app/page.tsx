@@ -521,10 +521,18 @@ export default function WeddingInvitation() {
           <button type="button" onClick={replay} aria-label="Replay envelope animation"><ReplayIcon /></button>
         </nav>
 
-        <div className={`scroll-cue${scrolled || phase !== "open" ? " is-hidden" : ""}`} aria-hidden="true">
-          <span className="scroll-cue-text">ادامه</span>
+        <button
+          type="button"
+          className={`scroll-cue${scrolled || phase !== "open" ? " is-hidden" : ""}`}
+          aria-label="مشاهده بیشتر"
+          onClick={() => {
+            const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            document.getElementById("countdown")?.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+          }}
+        >
+          <span className="scroll-cue-text">مشاهده بیشتر</span>
           <span className="scroll-cue-line"><span /></span>
-        </div>
+        </button>
 
         <section className="couple" dir="rtl" lang="fa" id="top">
           <div className="couple-photo">
